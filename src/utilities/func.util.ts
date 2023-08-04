@@ -1,6 +1,6 @@
 import { DynamicModule, ForwardReference, Type } from '@nestjs/common'
 import { RouteTree } from '@nestjs/core'
-import { TRouterConfigs } from 'src/app.router.ts'
+import { TRouterConfigs } from 'src/app.router'
 import { TCombineOptValidate, TValidateRequest } from '@globals/validation-route.global'
 
 
