@@ -1,0 +1,36 @@
+
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "moduleResolution": "node",
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@utilities/*": ["./src/utilities/*"],
+      "@main/*": ["src/main/*"],
+      "@app-module": ["src/app.module.ts"],
+      "@common-dtos/*": ["src/common/dtos/*"],
+      "@common-schemas/*": ["src/common/schemas/*"],
+      "@common-ifaces/*": ["src/common/interfaces/*"],
+      "@test-stubs/*": ["src/tests/stubs/*"],
+      "@middlewares": ["src/middlewares"],
+      "@globals/*": ["src/globals/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts"],
+  "exclude": ["node_modules"],
+}
