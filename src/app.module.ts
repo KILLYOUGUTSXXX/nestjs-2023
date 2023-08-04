@@ -2,10 +2,10 @@ import { MiddlewareConsumer, Module, NestModule, Provider, Type } from '@nestjs/
 import { RouterModule } from '@nestjs/core'
 import { ConfigModule } from '@nestjs/config';
 import { AuthMiddleware, InitMiddleware, ProtectMiddleware, RequestBodyMiddleware, ResponseMiddleware } from "@middlewares";
-import routerConfig from "./app.router.ts";
+import routerConfig from "./app.router";
 import { destructModuleFromRoutes } from "@utilities/func.util";
 import { ValidationRoute } from '@globals/validation-route.global';
-import { MainMongoModules } from './connections/mongos/mongo.module.js';
+import { MainMongoModules } from './connections/mongos/mongo.module';
 
 
 // init base director
